@@ -8,7 +8,7 @@ The following types of models were used to identify planetary objects: K-Nearest
 
 ## Results
 After experimenting with multiple model types and unique hyperparameter combinations, it appears that for this dataset, using PCA does not significantly improve model accuracy. 
-<img src="/ConfusionMatrix.png">
+<img src="NASAMLProject/ConfusionMatrix.png">
 The reported precision values for both classes in the final optimized model were 0.79 (CANDIDATE) and 0.85 (FALSE POSITIVE), meaing that the model has a relatively high trustworthyness when it makes a positive prediction. The reported recall values on the other hand indicate that the model is much adept at identifying instances of the CANDIDATE class as opposed to the FALSE POSITIVE class (0.87 vs. 0.76 respectively).
 
 Of the variables used in the model training, the radius of the object in quesiton ("koi_prad") was the most important when determining which class an object belonged to.
